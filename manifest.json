@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Test Game",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "start.html",
+    "default_icon": "icon/icon.png"
+  },
+  "permissions": ["storage"],
+  "icons": {
+    "128": "icon/icon.png"
+  }
+}

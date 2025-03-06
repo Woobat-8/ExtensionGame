@@ -1,0 +1,61 @@
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+    <div class="phone-screen scrollable">
+        <div class="container character-viewer">
+            <a href="../char.html" class="menu-button back-button">Back</a>
+            
+            <div class="character-header right-aligned-header">
+                <div class="rank-element-group">
+                    <div class="rank-pill" id="char-rank">S</div>
+                    <div class="element-pill" id="char-element">Shadow</div>
+                </div>
+                <h1 id="char-name">Character Name</h1>
+            </div>
+
+            <div class="image-container">
+                <img id="char-image" class="character-art" 
+                     alt="Character Art"
+                     onerror="this.style.display='none'; 
+                              document.getElementById('image-fallback').style.display='block';">
+                <div id="image-fallback" class="name-fallback" style="display: none;"></div>
+            </div>
+
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <span class="stat-label">HP</span>
+                    <span class="stat-value" id="stat-hp">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Attack</span>
+                    <span class="stat-value" id="stat-attack">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Defense</span>
+                    <span class="stat-value" id="stat-defense">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Energy Regen</span>
+                    <span class="stat-value" id="stat-energyregen">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">CRIT Rate</span>
+                    <span class="stat-value" id="stat-critrate">0%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">CRIT Damage</span>
+                    <span class="stat-value" id="stat-critdamage">0%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Elemental Bonus</span>
+                    <span class="stat-value" id="stat-elementalbonus">0%</span>
+                </div>            </div>
+        </div>
+    </div>
+    <script src="../js/characterSystem.js"></script>
+</body>
+</html>
